@@ -1,0 +1,4 @@
+recovery_only(`
+# Enable adb root
+set_prop(recovery, shell_prop)
+')
