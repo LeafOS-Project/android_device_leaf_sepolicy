@@ -17,4 +17,8 @@ allowxperm recovery loop_device:blk_file ioctl LOOP_CLR_FD;
 # Volume manager
 allow recovery sysfs_perdev_minors:file r_file_perms;
 allowxperm recovery block_device:blk_file ioctl { HDIO_GETGEO BLKGETSIZE };
+
+# Loop devices
+allow recovery sysfs_loop:dir r_dir_perms;
+allow recovery sysfs_loop:file rw_file_perms;
 ')
