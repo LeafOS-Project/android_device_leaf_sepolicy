@@ -13,4 +13,7 @@ allow recovery random_device:chr_file mounton;
 allow recovery exec_type:{ file lnk_file } r_file_perms;
 allow recovery loop_device:blk_file ioctl;
 allowxperm recovery loop_device:blk_file ioctl LOOP_CLR_FD;
+
+# Volume manager
+allow recovery sysfs_perdev_minors:file r_file_perms;
 ')
