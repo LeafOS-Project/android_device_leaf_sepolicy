@@ -14,6 +14,9 @@ allow recovery exec_type:{ file lnk_file } r_file_perms;
 allow recovery loop_device:blk_file ioctl;
 allowxperm recovery loop_device:blk_file ioctl LOOP_CLR_FD;
 
+# AnyKernel
+allow recovery tmpfs:lnk_file create_file_perms;
+
 # Volume manager
 allow recovery sysfs_perdev_minors:file r_file_perms;
 allowxperm recovery block_device:blk_file ioctl { HDIO_GETGEO BLKGETSIZE };
