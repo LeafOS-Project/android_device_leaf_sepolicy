@@ -7,7 +7,7 @@ allow recovery apex_mnt_dir:dir mounton;
 allow recovery cache_file:file x_file_perms;
 allow recovery { apex_mnt_dir device rootfs }:dir create_dir_perms;
 allow recovery device:file { create_file_perms x_file_perms };
-allow recovery { init kernel vendor_init ueventd persist_data_file }:dir r_dir_perms;
+allow recovery { init kernel vendor_init ueventd }:dir r_dir_perms;
 allow recovery { init kernel vendor_init ueventd }:file r_file_perms;
 allow recovery random_device:chr_file mounton;
 allow recovery exec_type:{ file lnk_file } r_file_perms;
