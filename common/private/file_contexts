@@ -1,0 +1,2 @@
+# FaceUnlock
+/(system/)?vendor/bin/hw/android\.hardware\.biometrics\.face@1\.0-service\.lmodroid   u:object_r:hal_face_lmodroid_exec:s0
