@@ -1,0 +1,6 @@
+type hal_face_lmodroid, domain;
+hal_server_domain(hal_face_lmodroid, hal_face)
+type hal_face_lmodroid_exec, vendor_file_type, exec_type, file_type;
+init_daemon_domain(hal_face_lmodroid)
+
+allow hal_face_lmodroid faceunlock_service:service_manager find;
