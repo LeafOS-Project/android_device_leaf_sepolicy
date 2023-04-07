@@ -19,7 +19,6 @@ allow recovery tmpfs:lnk_file create_file_perms;
 
 # Volume manager
 r_dir_file(recovery, sdcard_type)
-allow recovery sysfs_perdev_minors:file r_file_perms;
 allowxperm recovery block_device:blk_file ioctl { HDIO_GETGEO BLKGETSIZE };
 
 # Loop devices
